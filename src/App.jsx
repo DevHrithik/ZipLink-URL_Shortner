@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./layouts/app-layout";
 import LandingPage from "./pages/landingPage";
 import Dashboard from "./pages/dashboard";
@@ -34,6 +34,6 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
-  return <div className="text-4xl">Hello</div>;
+  return <RouterProvider router={router} />;
 }
 export default App;

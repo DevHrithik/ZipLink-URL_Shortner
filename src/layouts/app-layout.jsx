@@ -1,12 +1,16 @@
+import { Outlet } from "react-router-dom";
+import Header from "../components/header";
+
 const AppLayout = () => {
   return (
     <div>
-      AppLayout
-      <main>
-        {/* <NavBar /> */}
-        {/* Body */}
+      <main className=" min-h-screen container">
+        <Header />
+        <Outlet />
       </main>
-      {/* <Footer /> */}
+      <div className="pt-10 bg-gray-800 p-10 text-center">
+        Made with ❤️ by DevHrithik
+      </div>
     </div>
   );
 };
