@@ -12,10 +12,10 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import * as Yup from "yup";
 import Error from "./error";
-import { login } from "@/db/apiAuth";
+import { login } from "@/utils/apiAuth";
 import { BeatLoader } from "react-spinners";
 import useFetch from "@/hooks/use-fetch";
-import { UrlState } from "@/context";
+import { UrlState } from "../../context.jsx";
 
 const Login = () => {
   let [searchParams] = useSearchParams();
